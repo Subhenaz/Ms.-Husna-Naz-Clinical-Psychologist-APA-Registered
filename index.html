@@ -4,90 +4,347 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Subh-E-Naz Psychotherapy and Counseling</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f4f9ff;color:#333;line-height:1.6;}
-header{background:linear-gradient(135deg,#5a67d8,#6b46c1);color:white;padding:60px 20px;text-align:center;}
-.container{width:90%;max-width:1100px;margin:auto;padding:40px 0;}
-.card{background:white;padding:30px;border-radius:15px;margin-bottom:25px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
-h1{font-size:2.5rem;margin-top:20px;}
-h2{color:#5a67d8;margin-bottom:15px;}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:20px;}
-.service-box{background:#eef2ff;padding:20px;border-radius:12px;text-align:center;font-weight:bold;}
-.btn{display:inline-block;margin-top:15px;padding:12px 25px;background:#5a67d8;color:white;text-decoration:none;border-radius:8px;}
-input,textarea{width:100%;padding:12px;margin-bottom:15px;border-radius:8px;border:1px solid #ccc;}
-footer{text-align:center;padding:20px;background:#2d3748;color:white;margin-top:30px;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+line-height:1.7;
+}
+
+header{
+background:linear-gradient(135deg,#5b6df6,#7c3aed);
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.logo{
+width:140px;
+height:140px;
+background:white;
+border-radius:50%;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+header h1{
+font-size:3rem;
+margin-top:20px;
+}
+
+header p{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:60px 0;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+margin-bottom:35px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+margin-bottom:35px;
+color:#5b21b6;
+}
+
+.services,.reviews,.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.service-box,.review-box{
+background:#eef2ff;
+padding:25px;
+border-radius:18px;
+}
+
+.service-box h3{
+color:#4338ca;
+margin-bottom:10px;
+}
+
+.review-box h4{
+color:#4338ca;
+margin-top:15px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:18px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:#5b21b6;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-top:15px;
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+border-radius:10px;
+border:1px solid #ccc;
+margin-bottom:15px;
+font-size:1rem;
+}
+
+.socials{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:16px 20px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+}
+
+footer{
+background:#1e1b4b;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+header h1{
+font-size:2.1rem;
+}
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<div style="width:120px;height:120px;background:white;border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;font-size:48px;color:#5a67d8;">🧠</div>
+
+<div class="logo">🧠</div>
+
 <h1>Subh-E-Naz Psychotherapy and Counseling</h1>
+
 <p>Senior Clinical Psychologist & Counselor — Ms. Husna Naz</p>
-<p>Registered From APA</p>
-<a class="btn" href="https://wa.me/923338754314" target="_blank">Chat on WhatsApp</a>
+
+<p>APA Registered Professional</p>
+
+<a href="https://wa.me/923338754314" class="btn">WhatsApp Chat</a>
+
 </header>
 
 <div class="container">
 
 <div class="card">
-<h2>About Us</h2>
-<p>Professional psychological counseling and mental health support services for individuals, couples, children, and families.</p>
+
+<h2 class="section-title">About Us</h2>
+
+<p>
+Welcome to Subh-E-Naz Psychotherapy and Counseling. We provide professional and confidential psychological counseling services for individuals, children, students, couples, and families. Our mission is to improve emotional wellbeing, mental health, confidence, and quality of life through compassionate care and therapy.
+</p>
+
 </div>
 
 <div class="card">
-<h2>Our Services</h2>
+
+<h2 class="section-title">Our Services</h2>
+
 <div class="services">
-<div class="service-box">Online Counseling</div>
-<div class="service-box">Child Psychology</div>
-<div class="service-box">Mental Health Support</div>
-<div class="service-box">Career Counseling</div>
-<div class="service-box">Couple Counseling</div>
-<div class="service-box">Certified Internship Classes</div>
-<div class="service-box">Drug Rehab Counseling</div>
-<div class="service-box">Special Children Needs</div>
+
+<div class="service-box">
+<h3>Online Counseling</h3>
+<p>Professional online therapy sessions for stress, anxiety, depression, and emotional wellbeing.</p>
 </div>
+
+<div class="service-box">
+<h3>Career Counseling</h3>
+<p>Helping students and professionals choose the right career path and future goals.</p>
+</div>
+
+<div class="service-box">
+<h3>Marriage & Couple Counseling</h3>
+<p>Improving communication, emotional connection, and relationship understanding.</p>
+</div>
+
+<div class="service-box">
+<h3>Child Psychology</h3>
+<p>Support for emotional, behavioral, developmental, and educational challenges in children.</p>
+</div>
+
+<div class="service-box">
+<h3>Mental Health Support</h3>
+<p>Professional support for anxiety, trauma, panic attacks, depression, and stress management.</p>
+</div>
+
+<div class="service-box">
+<h3>Drug Rehab Counseling</h3>
+<p>Recovery-focused therapy and rehabilitation support for addiction treatment.</p>
+</div>
+
+</div>
+
 </div>
 
 <div class="card">
-<h2>Book Appointment</h2>
+
+<h2 class="section-title">Appointment Booking</h2>
+
 <form>
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
+
+<input type="text" placeholder="Your Full Name">
+
+<input type="email" placeholder="Your Email Address">
+
 <input type="tel" placeholder="Phone Number">
-<textarea placeholder="Write Your Message"></textarea>
-<button type="submit" class="btn" style="border:none;cursor:pointer;">Book Appointment</button>
+
+<textarea rows="6" placeholder="Write Your Message"></textarea>
+
+<button class="btn" type="submit">Book Appointment</button>
+
 </form>
+
 </div>
 
 <div class="card">
-<h2>Contact Details</h2>
+
+<h2 class="section-title">Therapy Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1200&auto=format&fit=crop">
+
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2 class="section-title">Client Reviews</h2>
+
+<div class="reviews">
+
+<div class="review-box">
+<p>
+“Excellent counseling services. Very professional and supportive therapist.”
+</p>
+<h4>— Sarah Khan</h4>
+</div>
+
+<div class="review-box">
+<p>
+“Highly recommended for anxiety and stress management counseling.”
+</p>
+<h4>— Ali Raza</h4>
+</div>
+
+<div class="review-box">
+<p>
+“Very kind and understanding psychologist. Helped my child improve emotionally.”
+</p>
+<h4>— Mrs. Ahmed</h4>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2 class="section-title">Contact Information</h2>
+
 <p><strong>Phone:</strong> 0333-8754314</p>
+
 <p><strong>Email:</strong> Subhenaz@gmail.com</p>
-<a class="btn" href="tel:03338754314">Call Now</a>
-<a class="btn" href="mailto:Subhenaz@gmail.com">Email Us</a>
-<a class="btn" href="https://wa.me/923338754314" target="_blank">WhatsApp Chat</a>
+
+<a href="tel:03338754314" class="btn">Call Now</a>
+
+<a href="mailto:Subhenaz@gmail.com" class="btn">Send Email</a>
+
+<a href="https://wa.me/923338754314" class="btn">WhatsApp</a>
+
 </div>
 
 <div class="card">
-<h2>Our Location</h2>
-<iframe src="https://maps.google.com/maps?q=Pakistan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;border-radius:12px;"></iframe>
+
+<h2 class="section-title">Our Location</h2>
+
+<iframe src="https://maps.google.com/maps?q=Pakistan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="350"
+style="border:none;border-radius:18px;">
+</iframe>
+
 </div>
 
 <div class="card">
-<h2>Follow Us</h2>
-<a class="btn" href="#">Facebook</a>
-<a class="btn" href="#">Instagram</a>
-<a class="btn" href="#">LinkedIn</a>
+
+<h2 class="section-title">Follow Us</h2>
+
+<div class="socials">
+
+<a href="#" class="btn">Facebook</a>
+
+<a href="#" class="btn">Instagram</a>
+
+<a href="#" class="btn">LinkedIn</a>
+
+<a href="#" class="btn">YouTube</a>
+
+</div>
+
 </div>
 
 </div>
 
-<a href="https://wa.me/923338754314" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50%;font-size:24px;text-decoration:none;">💬</a>
+<a class="whatsapp" href="https://wa.me/923338754314">💬</a>
 
 <footer>
-<p>© 2026 Subh-E-Naz Psychotherapy and Counseling</p>
+
+<p>© 2026 Subh-E-Naz Psychotherapy and Counseling | All Rights Reserved</p>
+
 </footer>
 
 </body>
